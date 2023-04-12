@@ -1,0 +1,182 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.App form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+.inputDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin:5px 3px;
+  padding: 10px 3px;
+  width: 100%;
+}
+.inputDiv label{
+ text-align: left;
+}
+.inputDiv input{
+  background-color: rgb(51, 51, 71);
+  border: 1px solid rgb(36, 36, 71);
+  border-radius: 10px;
+  color: white;
+  padding: 8px 5px;
+  font-size: 16px;
+  
+}
+.inputDiv select{
+  background-color: rgb(51, 51, 71);
+  border: 1px solid rgb(36, 36, 71);
+  border-radius: 10px;
+  color: white;
+  padding: 8px 5px;
+  font-size: 12px;
+}
+
+.inputDiv input:focus{
+  border-color: lightblue;
+}
+.inputDiv input::placeholder{
+  color: rgb(224, 224, 226);
+  font-size: 12px;
+}
+.checkboxDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 3px;
+  width: 100%;
+  font-size:12px
+}
+.checkboxDiv .checkboxSpan{
+  margin: 0 5px;
+}
+.checkboxDiv input[type="checkbox"]{
+  -webkit-appearance: none;
+  /* Remove most all native input styles */
+  appearance: none;
+  /* For iOS < 15 */
+  background-color: #fff;
+  /* Not removed via appearance */
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+.checkboxDiv input[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+  transform: scale(0);
+  transform-origin: bottom left;
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--form-control-color);
+  /* Windows High Contrast Mode */
+  background-color: CanvasText;
+}
+.checkboxDiv input[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+.checkboxDiv input[type="checkbox"]:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+}
+
+
+.inputDiv button{
+  text-align: center;
+  background-color: rgb(5, 61, 5);
+  color:white;
+  border: 1px solid rgb(7, 77, 8);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.inputDiv button:hover{
+  background-color: rgb(5, 81, 5);
+}
+.inputDiv .input-error{
+  border:1px solid red;
+}
+.inputDiv .input-error:focus{
+  border-color: red;
+}
+.inputDiv .input-error:hover{
+  border-color: red;
+}
+.error{
+  color: red;
+  font-size: 12px;
+  text-align: left;
+  margin: 5px 0 0 5px;
+  width: 100%;
+}
+.hide{
+  display:none
+}
+.link{
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.link a{
+  color: rgb(238, 242, 238);
+  font-size: 12px;
+  text-decoration: none;
+}
+.link a:hover{
+  color: rgb(238, 242, 238);
+  text-decoration: underline;
+}
